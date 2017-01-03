@@ -1,0 +1,27 @@
+#Options +FollowSymLinks
+#RewriteEngine on
+#RewriteBase /covernote/
+
+Options +FollowSymLinks
+RewriteEngine on
+RewriteCond %{REQUEST_FILENAME} -s
+RewriteRule ^ - [L]
+RewriteBase /covernote/
+
+
+#RewriteCond %{THE_REQUEST} ^GET\ /[^?\s]+\.php
+#RewriteRule (.*)\.(html|htm)$ /$1/ [L,R=301]
+
+#RewriteRule (.*)$ index.php?p=$1 [NC,QSA,L]
+
+#RewriteCond %{HTTP_HOST} ^www\.larry\.loc [NC]
+#RewriteRule ^(.*)$ http://larry.loc/$1 [L,R=301]
+
+#RewriteRule ^industry/([0-9a-z]+)/(.*)\.(xml|html|htm|form)?$ index.php?p=industry&id=$1&t=$2 [NC,QSA,L]
+#RewriteRule ^manage/([a-z]+)\.(xml|html|htm|form)?$ manage.php?template=manage&p=$1 [NC,QSA,L]
+
+
+RewriteRule ^manage\/(.*)\.(.*)?$        manage.php?template=manage&p=$1 [NC,QSA,L]
+
+RewriteRule (.*)\.(xml|html|htm|form)$  index.php?template=home&p=$1 [NC,QSA,L]
+RewriteRule (.*)$                       index.php?template=home&p=$1 [NC,QSA,L]

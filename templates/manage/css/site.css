@@ -1,0 +1,48 @@
+/*fw-v-3*/
+body{
+	margin:0;
+	padding:0;
+	font-family:Verdana, Arial, Helvetica, sans-serif;
+	font-size:90%; background-color:#FCFCFC;
+}
+#wrapper{
+	margin:2% auto;
+	width:1150px;
+	padding:2px; background-color:white !important;
+	border-left:1px solid #E8E8E8;
+	border-right:1px solid #E8E8E8;
+	border-bottom:1px solid #E8E8E8;
+	min-height:300px;
+	-webkit-box-shadow: 0px 0px 6px 0px ;
+	-moz-box-shadow: 	0px 0px 6px 0px ;
+	box-shadow:		    0px 0px 6px 0px ;
+}
+.menu			{ width:170px; border-right:1px solid #FAFAFA; min-height: 300px; float:left;}
+.content		{ float:left; width:960px;}
+
+.menu ul		{ padding: 20px; margin: 0; margin-top: 40px;}
+.menu ul li		{ padding: 0; line-height:30px; list-style:none;}
+.menu ul li	a	{ color:graytext; text-decoration: none;}
+.menu ul li	a:hover { color:black;}
+
+.content		{ padding: 8px;}
+
+.success		{ position:fixed; top:0px; margin:0 auto; padding:0; background:#E9FEDA !important; color:#333333; z-index:9999; font-size:12px; border:1px solid #C4FCBA; margin-bottom:8px; padding:8px; font-weight: bold; text-align: center; width:100%;}
+.sys_message		{ display: none; }
+.information		{ position:fixed; top:0px; background:#FFCCCC !important; color:#333333; z-index:9999; font-size:12px; border:1px solid #FF8282; margin-bottom:8px; padding:8px; font-weight: bold; text-align: center; width:100%;}
+
+h1				{ font-size:16px; font-family: verdana; border-bottom:1px solid #F4F4F4; color:#656565; font-family: verdana;}
+
+ul	li			{ padding: 4px; font-size: 12px;}
+
+.code			{ color:#305900;  list-style: none; padding: 8px; background: #EFFFDC; border-left:4px solid #A9DF6A;}
+.header_text		{ padding:0; margin:0; margin-left:40px;}
+.redtext		{ color:red;}
+
+.float_left_forms	{ width: 290px; float:left; padding:4px;}
+.saturday , .sunday, .gov	{ background:#fdecf0 !important;}
+.hnba				{ background: #fdecf0;}
+table td{ font-size:12px;}
+label    		{ color:red; padding: 8px !important; color:black !important; text-shadow:0; background: white !important; text-shadow:none !important;}
+label.error    	{ border-left:2px solid red; padding: 8px !important; color:black !important; text-shadow:0; background: white !important; text-shadow:none !important;}
+input.error    	{ border-left:2px solid red;}
